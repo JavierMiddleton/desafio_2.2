@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Grid */
+
+.container {
+    background-color: #E3FDFD;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:    
+    "header header"
+    "aside main"
+    "footer footer";
+    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-columns: 1fr 7fr;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header CSS */
+
+header {
+    grid-area: header;
+    background-color: #A6E3E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    background-color: #71C9CE;
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+}
+
+header h3 {
+    background-color: #71C9CE;
+    font-style: italic;
+}
+
+/* Aside CSS */
+
+aside {
+    grid-area: aside;
+    background-color: #CBF1F5;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+aside h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+aside p:hover {
+    font-weight: 700;
+}
+
+/* Main Grid CSS */
+
+main {
+    grid-area: main;
+    background-color: #E3FDFD;
+}
+
+/* Main Flex Cards */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.card img {
+    width: 70%;
+    padding: 20px;
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.buy-button {
+    background-color: #71C9CE;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-button a {
+    font-weight: 700;
+    color: white;
+}
+
+.buy-button a:hover {
+    font-weight: 500;
+    color: aqua;
+}
+
+/* Footer CSS */
+
+footer {
+    grid-area: footer;
+    background-color: #A6E3E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
